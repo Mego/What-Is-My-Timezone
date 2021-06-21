@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>What Is My Timezone?</title>
+        <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0/build/global/luxon.min.js" integrity="sha256-cJnCTPRTD3OUjTD4Ml0WEMsmTiLl71arKaZ9DEZJk0o=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <p id="output"></p>
+        <script type="text/javascript">
+            document.getElementById("output").innerText = `Your timezone is: ${luxon.Settings.defaultZoneName}`;
+        </script>
+    </body>
+</html>
